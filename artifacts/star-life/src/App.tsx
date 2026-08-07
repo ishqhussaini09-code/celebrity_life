@@ -65,7 +65,7 @@ function SocialApp({ onBack, title, kind }: { onBack: () => void; title: string;
 }
 
 function Studio({ onBack }: { onBack: () => void }) {
-  const { state, dispatch } = useGame(); const [showProduction, setShowProduction] = useState(false);
+  const { state, dispatch } = useGame(); const [showProduction, setShowProduction] = useState(true);
   return <Shell title="Studio" subtitle="casting / streaming wars" onBack={onBack}><Panel>
     <SectionTitle>Studio Tools</SectionTitle>
     <div className="grid grid-cols-2 gap-3">
