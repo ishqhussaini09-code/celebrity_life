@@ -1,1 +1,1 @@
-run = "cd artifacts/star-life && pnpm install && pnpm dev -- --host 0.0.0.0"
+run = "PORT=3000 BASE_PATH=/ cd artifacts/star-life && pnpm install && pnpm dev -- --host 0.0.0.0 --port $PORT"
