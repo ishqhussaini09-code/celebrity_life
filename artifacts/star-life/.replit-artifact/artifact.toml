@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Star Life"
+description = "A deep mobile celebrity-life simulation where players build fame across social media, Hollywood, business, travel, relationships, scandals, and survival systems."
+version = "1.0.0"
+id = "artifacts/star-life"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20620
+
+[services.development]
+run = "pnpm --filter @workspace/star-life run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/star-life", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/star-life/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20620"
+BASE_PATH = "/"
