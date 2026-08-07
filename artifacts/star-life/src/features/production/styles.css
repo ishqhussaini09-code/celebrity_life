@@ -1,0 +1,11 @@
+.production-root { display:flex; gap:16px; padding:12px; }
+.production-left { width:32%; background:linear-gradient(180deg,#121526,#0f1220); border-radius:8px; padding:12px; }
+.production-right { flex:1; background:linear-gradient(180deg,#0f1320,#0c0f16); border-radius:8px; padding:12px; }
+.project-list { margin-top:12px; display:flex; flex-direction:column; gap:8px; }
+.project-item { padding:8px; border-radius:6px; background:rgba(255,255,255,0.02); cursor:pointer; }
+.project-item.selected { outline:2px solid rgba(200,180,120,0.12); }
+.prod-actions { display:flex; gap:8px; }
+.project-detail { padding:8px; }
+.scene-list { margin-top:8px; display:flex; flex-direction:column; gap:6px; }
+.controls { margin-top:12px; display:flex; gap:8px; }
+.log { margin-top:12px; max-height:180px; overflow:auto; }
